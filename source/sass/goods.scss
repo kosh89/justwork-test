@@ -1,0 +1,32 @@
+.goods {
+  margin-left: 20px;
+  width: 685px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+}
+
+.goods__view {
+  position: absolute;
+  top: -35px;
+  right: 0;
+}
+
+.goods__button {
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+
+  &--tablet {
+    background-image: url("../img/goods/tablet.png");
+  }
+
+  &--row {
+    background-image: url("../img/goods/row.png");
+  }
+}
+

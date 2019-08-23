@@ -1,0 +1,103 @@
+.filter {
+  width: 215px;
+
+}
+
+.filter__reset {
+  width: 100%;
+  min-height: 36px;
+  background-color: #edeff3;
+  color: #77787a;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 12px;
+
+  span {
+    padding-left: 20px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 15px;
+      height: 15px;
+      top: 0;
+      left: 5px;
+      background-image: url("../img/filter/cross.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+.filter__input-list {
+  display: none;
+}
+
+.filter__list,
+.filter__input-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.filter__list {
+  width: 100%;
+  border: 1px solid #edeff3;
+}
+
+.filter__item {
+  border-bottom: 1px solid #edeff3;
+
+  &:last-child {
+    border: none;
+  }
+
+  & > label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font-size: 14px;
+    color: #77787a;
+  }
+}
+
+.filter__name {
+  &:checked + .filter__input-list {
+    display: block;
+  }
+}
+
+.filter__input-list {
+  label {
+    display: block;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000000;
+    padding-left: 45px;
+    padding-bottom: 20px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 17px;
+      border: 1px solid #bec1c8;
+      left: 20px;
+      top: -1px;
+    }
+
+    span {
+      color: #77787a;
+    }
+  }
+}
+
+.filter__checkbox:checked + label::before {
+  background-image: url("../img/filter/cross.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}

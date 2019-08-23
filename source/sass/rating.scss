@@ -1,0 +1,71 @@
+.rating__list {
+  margin: 0;
+  padding: 0;
+  width: 75px;
+  height: 15px;
+  list-style: none;
+  display: flex;
+  background-image: url("../img/rating/star.png");
+  position: relative;
+
+  li {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+
+    &:nth-child(2) {
+      left: 15px;
+    }
+
+    &:nth-child(3) {
+      left: 30px;
+    }
+
+    &:nth-child(4) {
+      left: 45px;
+    }
+
+    &:nth-child(5) {
+      left: 60px;
+    }
+  }
+}
+
+.rating__current {
+  background-image: url("../img/rating/star-yellow.png");
+  z-index: 1;
+  position: absolute;
+  left: 0;
+}
+
+.rating__star {
+  display: block;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+
+  &:hover {
+    background-image: url("../img/rating/star-yellow.png");
+  }
+
+  &--two:hover {
+    width: 30px;
+    left: -15px;
+  }
+
+  &--three:hover {
+    width: 45px;
+    left: -30px;
+  }
+
+  &--four:hover {
+    width: 60px;
+    left: -45px;
+  }
+
+  &--five:hover {
+    width: 75px;
+    left: -60px;
+  }
+}

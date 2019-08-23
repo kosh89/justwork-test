@@ -1,0 +1,15 @@
+.recently {
+  width: 100%;
+  background-color: #edeff3;
+}
+
+.recently__goods {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.recently .good {
+  width: 140px;
+}
